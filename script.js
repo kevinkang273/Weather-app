@@ -10,14 +10,18 @@ $(() => {
     app.init();
 })
 
+const city = $('.city').val();
+
 app.getWeatherDetails = () => {
     const response = $.ajax({
-        url: `${app.baseUrl}`,
+        url: `${app.baseUrl}?${city}`,
         method: 'GET',
         dataType: 'json',
         data: {
             apiKey: app.baseUrl
         }
+    }).then(result => {
+
     })
 
     return response;
