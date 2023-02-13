@@ -8,8 +8,9 @@ app.init = () => {
 
 $(() => {
     app.init();
+    app.getWeatherDetails();
 })
-
+app.apiKey = 'cf988d77297848bb983202927230902';
 const city = $('.city').val();
 
 app.getWeatherDetails = () => {
@@ -18,10 +19,10 @@ app.getWeatherDetails = () => {
         method: 'GET',
         dataType: 'json',
         data: {
-            apiKey: app.baseUrl
+            apiKey: app.apiKey
         }
     }).then(result => {
-
+        console.log(result);
     })
 
     return response;
