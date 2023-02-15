@@ -1,25 +1,28 @@
 const app = {};
 
-app.baseUrl = `http://api.weatherapi.com/v1/current.json`;
+app.baseUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/`;
 
 app.init = () => {
     console.log('Ready to go!')
+    app.getWeatherDetails();
 };
 
 $(() => {
     app.init();
     app.getWeatherDetails();
 })
-app.apiKey = 'cf988d77297848bb983202927230902';
+app.apiKey = 'VNVKESJ99JE2WNXUHH7739FJE';
 const city = $('.city').val();
+
+// app.url = `https://api.open-meteo.com/v1/forecast`;
 
 app.getWeatherDetails = () => {
     const response = $.ajax({
-        url: `${app.baseUrl}?${city}`,
+        url: `${app.baseUrl}toronto`,
         method: 'GET',
         dataType: 'json',
         data: {
-            apiKey: app.apiKey
+            key: app.apiKey
         }
     }).then(result => {
         console.log(result);
