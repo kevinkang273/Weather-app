@@ -5,16 +5,15 @@ app.baseUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest
 app.init = () => {
     console.log('Ready to go!')
     app.getWeatherDetails();
+
 };
 
 $(() => {
     app.init();
-    app.getWeatherDetails();
 })
+
 app.apiKey = 'VNVKESJ99JE2WNXUHH7739FJE';
 const city = $('.city').val();
-
-// app.url = `https://api.open-meteo.com/v1/forecast`;
 
 app.getWeatherDetails = () => {
     const response = $.ajax({
