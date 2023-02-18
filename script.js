@@ -1,23 +1,37 @@
 const app = {};
 
-app.baseUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/`;
+app.baseUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline`;
 
 app.init = () => {
     console.log('Ready to go!')
     app.getWeatherDetails();
-
+    $('#myForm').submit(function() {
+        const value = $(this).serialize();
+    
+        console.log("Hello");
+    })
+    
+    
 };
 
 $(() => {
     app.init();
 })
 
+$('#myForm').submit(function() {
+    const value = $(this).serialize();
+
+    console.log("Hello");
+})
+
+
+
 app.apiKey = 'VNVKESJ99JE2WNXUHH7739FJE';
-const city = $('.city').val();
+
 
 app.getWeatherDetails = () => {
     const response = $.ajax({
-        url: `${app.baseUrl}toronto`,
+        url: `${app.baseUrl}/toronto`,
         method: 'GET',
         dataType: 'json',
         data: {
