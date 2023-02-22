@@ -4,27 +4,24 @@ app.baseUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest
 
 app.init = () => {
     console.log('Ready to go!')
+    
+    
     app.getWeatherDetails();
-    $('#myForm').submit(function() {
-        const value = $(this).serialize();
-    
-        console.log("Hello");
-    })
     
     
+  
 };
 
 $(() => {
     app.init();
+   
 })
 
-$('#myForm').submit(function() {
-    const value = $(this).serialize();
-
-    console.log("Hello");
+// Get value of city typed in
+$('.city').keyup(function() {
+    console.log($(this).val());
+    const valueEntered = $(this).val();
 })
-
-
 
 app.apiKey = 'VNVKESJ99JE2WNXUHH7739FJE';
 
