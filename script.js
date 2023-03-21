@@ -8,13 +8,16 @@ app.init = () => {
 
 
     // Get value of city typed in
-    $('.city').keyup(function () {
-        console.log($(this).val());
-        const valueEntered = $(this).val();
-        app.getWeatherDetails(valueEntered);
+    $('.city').keyup(function (event) {
+        
+        if (event.key === "Enter") {
+            const valueEntered = $('.city').val();
+            const text = app.getWeatherDetails(valueEntered);
+            $('.weather').text(text);
+        }
     })
     
-
+    
 
 };
 

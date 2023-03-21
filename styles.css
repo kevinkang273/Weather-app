@@ -230,8 +230,33 @@ template {
     display: none
 }
 
+html {
+    font-size: 62.5%;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2rem;
+	color: rgb(85, 84, 80);
+}
+
 .wrapper {
     max-width: 800px;
     width: 80%;
     margin: 0 auto;
 }
+
