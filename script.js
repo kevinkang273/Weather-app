@@ -12,8 +12,8 @@ app.init = () => {
         
         if (event.key === "Enter") {
             const valueEntered = $('.city').val();
-            const text = app.getWeatherDetails(valueEntered);
-            $('.weather').text(text);
+            app.getWeatherDetails(valueEntered);
+            
         }
     })
     
@@ -40,6 +40,7 @@ app.getWeatherDetails = (city) => {
         }
     }).then(result => {
         console.log(result);
+        $(".weather").text(result.currentConditions.temp);
     })
 
     return response;
