@@ -252,11 +252,23 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 2rem;
 	color: rgb(85, 84, 80);
+    background-color: skyblue;
 }
 
 .wrapper {
     max-width: 800px;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
 }
 
+.background {
+    margin-top: 400px;
+}
+
+.label {
+    margin-top: 10px;
+}
+
+.box {
+    display: flex;
+}
