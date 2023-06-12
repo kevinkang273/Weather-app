@@ -253,7 +253,7 @@ body {
 	font-size: 2rem;
 	color: rgb(85, 84, 80);
     background-color: skyblue;
-    background-image: url("../Weather-app-main/vancouver-weather-forecast-flurries.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -265,10 +265,14 @@ body {
 }
 
 .background {
-    margin-top: 400px;
+    margin-top: 200px;
+    background-image: url(../Weather-app-main/vancouver-weather-forecast-flurries.jpg);
+    background-size: cover;
+ 
 }
 
 .label {
+    
     margin-top: 10px;
 }
 
@@ -278,4 +282,10 @@ body {
 
 .location {
     padding-bottom: 50px;
+    font-size: 100px;
+    font-family: 'Righteous', cursive;
+}
+
+.heading {
+    padding-top: 20px;
 }
