@@ -267,6 +267,7 @@ body {
 body {
     /* background-image: url(../Weather-app-main/vancouver-weather-forecast-flurries.jpg);
     background-size: cover; */
+    background-size: cover;
 }
 .background {
     margin-top: 100px;

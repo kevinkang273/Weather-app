@@ -68,7 +68,7 @@ app.changeBackground = (celcius) => {
 
     if (celcius > 20) {
         // Summer
-        $('body').css("background-image", "url(../Weather-app-main/210316134738-02-wisdom-project-summer.jpg)")
+        $('body').css("background-image", "url(../Weather-app-main/summer.jpg)")
     } else if (celcius > 10) {
         // Spring
         $('body').css("background-image", "url(../Weather-app-main/desktop-wallpaper-spring-park-spring-nature-in-jpg-format-for-flower-park.jpg)")
