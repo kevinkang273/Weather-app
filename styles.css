@@ -264,11 +264,14 @@ body {
     margin: 0 auto;
 }
 
+body {
+    /* background-image: url(../Weather-app-main/vancouver-weather-forecast-flurries.jpg);
+    background-size: cover; */
+}
 .background {
-    margin-top: 200px;
-    background-image: url(../Weather-app-main/vancouver-weather-forecast-flurries.jpg);
-    background-size: cover;
- 
+    margin-top: 100px;
+
+
 }
 
 .label {

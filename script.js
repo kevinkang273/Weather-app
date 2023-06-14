@@ -68,13 +68,13 @@ app.changeBackground = (celcius) => {
 
     if (celcius > 20) {
         // Summer
-        $('.background').css("background-image", "url(../Weather-app-main/210316134738-02-wisdom-project-summer.jpg)")
+        $('body').css("background-image", "url(../Weather-app-main/210316134738-02-wisdom-project-summer.jpg)")
     } else if (celcius > 10) {
         // Spring
-        $('.background').css("background-image", "url(../Weather-app-main/desktop-wallpaper-spring-park-spring-nature-in-jpg-format-for-flower-park.jpg)")
+        $('body').css("background-image", "url(../Weather-app-main/desktop-wallpaper-spring-park-spring-nature-in-jpg-format-for-flower-park.jpg)")
     } else {
         // Winter
-        $('.background').css("background-image", "url(../Weather-app-main/pm.jpg)")
+        $('body').css("background-image", "url(../Weather-app-main/pm.jpg)")
     }
 }
 
